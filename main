@@ -1,0 +1,75 @@
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <title>MoMG: GiF GALLeRY</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/site-images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/site-images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/site-images/favicon-16x16.png">
+        <link rel="manifest" href="/site-images/site.webmanifest">
+        <link rel="mask-icon" href="/site-images/safari-pinned-tab.svg" color="#004eb4">
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta name="msapplication-TileColor" content="#004eb4">
+        <meta name="msapplication-config" content="/site-images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <meta property="og:image:height" content="1036">
+        <meta property="og:image:width" content="1978">
+        <meta property="og:description" content="Many GiFs for you to see here!">
+        <meta property="og:title" content="THe GiF GALLeRY">
+        <meta property="og:url" content="https://momg.neocities.org/">
+        <meta property="og:image" content="https://momg.neocities.org/site-images/og-image.jpg">
+        <link rel="stylesheet" type="text/css" href="gallery.css?v=1">
+        <link rel="stylesheet" type="text/css" href="frames.css?v=1">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h3><a href="index.html">WeLCoME To THe GiF GALLeRY</a></h3>
+                <h1>The <span id="room-name">First</span> Room</h1>
+            </div>
+            <nav>
+                <a href="info.html"></a>
+                <!-- Weird flexbox fix? -->
+                <ul>
+                    <li><span id="gif-count">99,969</span> GiFs in the gallery, <span id="gif-count-room">8</span> in this room</li>
+                    <li>Find the door to go to a new room <img src="gifs/i-49995.gif"></li>
+                    <li>You have passed <span id="door-count">0</span> doors</li>
+                    <li><a href="info.html">Info :^]</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="room">
+            <noscript>
+                <div id="noscript">
+                    Hello Sir/Mam, it looks like you have JavaScript disabled.
+                    <br />You will need to turn it on for this site to work! <br />In the meantime, please enjoy this selection of gifs.
+                </div>
+            </noscript>
+            <div class="picture picture-frame-4"><img src="gifs/i-1323.gif"></div>
+            <div class="picture picture-frame-2"><img src="gifs/i-36581.gif"></div>
+            <a class="sign disableInMelonFrame" href="https://melonking.net/" target="_blank"><img class="tilt" src="site-images/melonking.png"></a>
+            <div class="picture picture-frame-5"><img src="gifs/i-69107.gif"></div>
+            <div class="picture picture-frame-3"><img src="gifs/i-27177.gif"></div>
+            <div class="picture picture-frame-4"><img src="gifs/i-36184.gif"></div>
+            <div class="picture picture-frame-1"><img src="gifs/i-42534.gif"></div>
+            <div class="picture picture-frame-2"><img src="gifs/i-454.gif"></div>
+            <div class="picture picture-frame-5"><img src="gifs/i-21.gif"></div>
+            <img id="door" src="gifs/i-49995.gif" onclick="door()">
+        </div>
+        <div id="rest">
+            <p>
+                Phew, you take a rest on the bench, <br>there are so many gifs to see here!
+                <span onclick="rest(false)">I am ready now!</span>
+            </p>
+        </div>
+        <footer>
+            <img id="bench" src="site-images/bench.png" onclick="rest(true)">
+        </footer>
+        <img id="audio-toggle" src="site-images/audio-on.png" onclick="audioToggle()">
+        <audio id="door-audio" src="audio/door.mp3"></audio>
+        <audio id="background-audio" src="audio/gallery-market.mp3" autoplay="" loop=""></audio>
+        <script src="https://melonking.net/scripts/mk-frame-checker.js?v=0"></script>
+        <script src="names.js?v=0"></script>
+        <script src="gallery.js?v=1"></script>
+    
+
+<div id="shadow-wrapper-popup-benefactor" style="display: contents;"><link rel="stylesheet" href="chrome-extension://efdgbhncnligcbloejoaemnfhjihkccj/assets/fonts/fonts.css"></div></body></html>
