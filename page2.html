@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonlinear Image Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            overflow-y: auto;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 90vw;
+            height: 90vh;
+            gap: 20px;
+
+        }
+        .image-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .image-wrapper img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-wrapper:hover img {
+            transform: scale(1.1);
+        }
+        .image-wrapper .hover-text {
+            position: absolute;
+            font-family: Snell Roundhand, cursive;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .image-wrapper:hover .hover-text {
+            opacity: 1;
+        }
+        .image-wrapper:nth-child(1) { width: 40%; height: auto; }
+        .image-wrapper:nth-child(2) { width: 50%; height: auto; }
+        .image-wrapper:nth-child(3) { width: auto; height: 32%; }
+        .image-wrapper:nth-child(4) { width: auto; height: 45%; }
+        .image-wrapper:nth-child(5) { width: 50%; height: auto; }
+        .image-wrapper:nth-child(6) { width: 40%; height: auto; }
+    </style>
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <div class="image-container">
+        <div class="image-wrapper">
+            <img src="museumphotos/File 60.jpeg" alt="Image 1">
+            <div class="hover-text">Dining on top of the eiffel tower...discovering a love for st. germain! I still have the receipt for the $80 we spent on those drinks that night...it's a reminder that you inspire me to have more fun and take life a little less seriously</div>
+        </div>
+        <div class="image-wrapper">
+            <img src="museumphotos/File 8.jpeg" alt="Image 2">
+            <div class="hover-text">More graduation activities and you wore the flower I made :)</div>
+        </div>
+        <div class="image-wrapper" onclick="navigateTo('page3.html')">
+            <img src="museumphotos/door3.jpeg" alt="Image 1">
+            <div class="hover-text">enter through this door if you are a tunaholic...</div>
+        </div>
+        <div class="image-wrapper">
+            <img src="museumphotos/File 4.jpeg" alt="Image 5">
+            <div class="hover-text">Cute brooklyn italian deli with the shirt I made for you</div>
+        </div>
+        <div class="image-wrapper">
+            <img src="museumphotos/File 5.jpeg" alt="Image 3">
+            <div class="hover-text">Moose (?)</div>
+        </div>
+        <div class="image-wrapper">
+            <img src="museumphotos/File 33.jpeg" alt="Image 4">
+            <div class="hover-text">Hvar's finest black pepper in the croatian wine, we finished a whole liter for lunch and you bought me a lavender satchel after that I still carry around in my purple bag every day</div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
